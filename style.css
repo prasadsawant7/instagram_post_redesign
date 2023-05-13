@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+	box-sizing: border-box;
+    font-family: 'Cabin';
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.feeds {
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.feeds .feeds-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0px;
+}
+
+.feeds .feeds-header .text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.feeds .feeds-header .filter-btns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 130px;
+}
+
+.feeds .feeds-header .filter-btns #latest,
+.feeds .feeds-header .filter-btns #popular {
+    outline: 0;
+    border: 0.5px solid rgb(210, 210, 210);
+    background-color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.feeds .feeds-header .filter-btns .active {
+    font-weight: 800;
+    background-color: #ffffff;
+}
+
+.feeds .posts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.feeds .posts .post {
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 0.5px solid rgb(230, 230, 230);
+    padding: 20px;
+}
+
+.feeds .posts .post .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.feeds .posts .post .header #name {
+    width: 300px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.feeds .posts .post .header #name .user-profile {
+    margin: 0px 10px 0px 0px;
+}
+
+.feeds .posts .post .header #name .user-profile,
+.feeds .posts .post .header #name .user-profile img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.feeds .posts .post .header #name .user-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.feeds .posts .post .header #name .user-details .fullname,
+.feeds .posts .post #description .fullname {
+    font-weight: 600;
+    margin: 0px 0px 1px 0px;
+}
+
+.feeds .posts .post .header #name .user-details .location {
+    margin-top: 1px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #878787;
+}
+
+.feeds .posts .post .header #options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.feeds .posts .post .header #options .bx {
+    cursor: pointer;
+}
+
+.feeds .posts .post #image {
+    width: 100%;
+    height: 400px;
+    margin: 10px 0px;
+    border-radius: 10px;
+}
+
+.feeds .posts .post #image img {
+    width: 100%;
+    height: 400px;
+    border-radius: 10px;
+}
+
+.feeds .posts .post #toolbar {
+    margin: 10px 0px;
+}
+
+.feeds .posts .post #toolbar,
+.feeds .posts .post #toolbar .option-1,
+.feeds .posts .post #toolbar .option-2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 17px;
+}
+
+.feeds .posts .post #toolbar .option-1 .like,
+.feeds .posts .post #toolbar .option-1 .like-icon,
+.feeds .posts .post #toolbar .option-1 .like-count,
+.feeds .posts .post #toolbar .option-1 .comment,
+.feeds .posts .post #toolbar .option-1 .comment-icon,
+.feeds .posts .post #toolbar .option-1 .comment-count,
+.feeds .posts .post #toolbar .option-1 .share,
+.feeds .posts .post #toolbar .option-1 .share-icon,
+.feeds .posts .post #toolbar .option-1 .share-count,
+.feeds .posts .post #toolbar .option-2 .save,
+.feeds .posts .post #toolbar .option-2 .save-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.feeds .posts .post #toolbar .option-1 .like,
+.feeds .posts .post #toolbar .option-1 .comment {
+    margin-right: 10px;
+}
+
+.feeds .posts .post #toolbar .option-1 .like-icon,
+.feeds .posts .post #toolbar .option-1 .comment-icon,
+.feeds .posts .post #toolbar .option-1 .share-icon {
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.feeds .posts .post #toolbar .option-2 .save-icon {
+    cursor: pointer;
+}
